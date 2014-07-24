@@ -61,7 +61,7 @@ if [ -z "$TMPDIR" ]; then
     TMPDIR=/tmp/
 fi
 IN=$(mktemp ${TMPDIR}Rio-XXXXXXXX)
-OUT=$(mktemp ${TMPDIR}Rio-XXXXXXXX).png
+OUT=$(mktemp ${TMPDIR}Rio-XXXXXXXX).pdf
 ERR=$(mktemp ${TMPDIR}Rio-XXXXXXXX).err
 
 while getopts "d:hgnprsve:f:b" OPTION
@@ -88,7 +88,7 @@ do
 			exit 1
 			;;
 		g)
-			REQUIRES="${REQUIRES}require(ggplot2);g<-ggplot(df);"
+			REQUIRES="${REQUIRES}require(ggplot2);"
 			;;
 		n)
 			HEADER="F"
