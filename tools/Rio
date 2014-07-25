@@ -49,7 +49,7 @@ callR() {
 
 SCRIPT=
 REQUIRES=
-DELIMITER=","
+DELIMITER="\t"
 HEADER="T"
 VERBOSE=false
 DPI=72
